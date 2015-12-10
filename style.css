@@ -51,12 +51,104 @@ table {
 
 html, body{
 	color:#282828;
+	height: 100%;
+	font-family: 'Montserrat',sans-serif;
+
+
 }
 
-header{
+/* La , siginifica Y -> nuestro header y footer aplicar ese estilo */
+header, footer{
 	background-color: #282828;
+
+	position: absolute;
+	width: 100%;
 }
+
+
 
 header img{
-	width: 150px
+	width: 250px;
+	display: block;
 }
+
+nav ul li{
+	color:#ffffff;
+	display: inline;
+	font-weight: 400;
+}
+
+.home{
+
+	/* Background:;
+		1.- Poner un color de fondo blanco
+		2.- Buscar una imagen de fondo y ponerla
+		3.- No repetirla
+		4.- Centrar tanto horizontalmente como verticalmente
+		5.- Quiero que quede fija aunque se este cambiando la ventana del navegador 
+
+	*/
+	background:#ffffff url(assets/bg.jpg) no-repeat center center fixed;
+
+	/* Toma la imagen y que sea proporcional a la ventana del navegador */
+	background-size:cover;
+	webkit-background-size:cover;
+	-moz-background-size:cover;
+
+
+	/*height: 100%;*/
+	text-align: center;
+	color: #ffffff;
+
+	/* padding es el margen de afuera hacia adentro */
+	/*padding: 50px 0;*/
+
+	/* margin: ; de adentro hacia afuera */
+	/*margin:  50px 0;*/
+
+	padding: 20% 20%;
+
+	box-sizing: border-box;
+
+
+
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.boton{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #ffb400;
+	padding: 20px 30px 20px 30px;  // Mancecillas de Reloj
+	font-weight: 400;
+	border-bottom: 6px solid #e49100;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+
+
+}
+
+footer{
+	padding: 20px 0;
+	box-sizing: border-box;
+
+}
+
+footer a {
+	color: #ffffff;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
